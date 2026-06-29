@@ -1046,3 +1046,68 @@ img,
 .mazu-project .mazu-image-05 img{width:100%!important;height:auto!important;display:block}
 .mazu-project .info-image img,.mazu-project .cluster-card img{background:transparent!important}
 @media (max-width: 820px){.mazu-project .mazu-visual-block{grid-template-columns:1fr!important}.mazu-project .mazu-image-05{min-height:0!important}}
+
+
+/* ===== v27 Longyin text color refinement ===== */
+.longyin-project{
+  color:#bda9b3;
+}
+.longyin-project .site-header{
+  background:rgba(10,9,14,.46);
+  border-bottom:1px solid rgba(255,214,228,.10);
+}
+.longyin-project .brand-mark,
+.longyin-project .site-nav a,
+.longyin-project .menu-toggle{
+  color:#ead8df;
+}
+.longyin-project .project-overlay h1,
+.longyin-project .project-intro h2,
+.longyin-project .info-text h3,
+.longyin-project .cluster-copy h4,
+.longyin-project .text-card h4,
+.longyin-project .next-inner strong,
+.longyin-project .site-footer strong{
+  color:#ead5dd;
+}
+.longyin-project .project-label,
+.longyin-project .hero-meta,
+.longyin-project .hero-meta span,
+.longyin-project .eyebrow,
+.longyin-project .facts div span,
+.longyin-project .bullet-list div span,
+.longyin-project .text-card p,
+.longyin-project .site-footer p,
+.longyin-project .footer-nav a{
+  color:#c9b0ba;
+}
+.longyin-project .project-copy > p,
+.longyin-project .info-text p,
+.longyin-project .cluster-copy p,
+.longyin-project .text-card p{
+  color:#cdb9c1;
+}
+.longyin-project .facts div strong,
+.longyin-project .bullet-list div strong{
+  color:#e0ccd2;
+}
+.longyin-project .facts div,
+.longyin-project .bullet-list div{
+  border-color:rgba(255,215,226,.10);
+}
+.longyin-project .project-copy,
+.longyin-project .info-section,
+.longyin-project .cluster-card,
+.longyin-project .site-footer{
+  border-color:rgba(255,215,226,.08);
+}
+.longyin-project .cluster-copy,
+.longyin-project .project-copy,
+.longyin-project .info-section{
+  background:linear-gradient(180deg,rgba(255,240,246,.045),rgba(255,240,246,.02));
+}
+.longyin-project .image-note{
+  background:rgba(20,14,19,.65);
+  color:#dfc6cf;
+  border:1px solid rgba(255,215,226,.12);
+}
