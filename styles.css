@@ -414,12 +414,12 @@ main{position:relative;z-index:2}
 .month-intro-inner{position:relative;z-index:2;padding:clamp(48px,6vw,82px) var(--outer-gutter) clamp(64px,8vw,112px)}
 .month-intro-meta{display:flex;justify-content:space-between;gap:20px;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:rgba(230,236,248,.72);margin-bottom:clamp(52px,8vw,110px)}
 .month-intro-grid{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(340px,.62fr);gap:clamp(30px,5vw,88px);align-items:end}
-.month-intro h1{margin:0;font-size:clamp(68px,9vw,150px);line-height:.92;letter-spacing:-.05em;font-weight:650;max-width:7ch}
+.month-intro h1{margin:0;font-size:clamp(56px,7.4vw,124px);line-height:.96;letter-spacing:-.04em;font-weight:650;max-width:8ch}
 .month-intro h1 span{display:block}
-.month-intro h1 span + span{margin-top:.2em}
+.month-intro h1 span + span{margin-top:.24em}
 .month-intro-copy p{margin:0 0 30px;font-size:16px;line-height:1.95;color:rgba(226,232,242,.84);max-width:600px}
 .hero-keywords{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px 16px;margin:4px 0 26px;max-width:420px}
-.hero-keywords span{display:block;padding:10px 0;border-top:1px solid rgba(255,255,255,.14);font-size:clamp(18px,1.8vw,28px);line-height:1.1;letter-spacing:-.03em;color:#f2f6fd}
+.hero-keywords span{display:block;padding:11px 0;border-top:1px solid rgba(255,255,255,.14);font-size:clamp(16px,1.45vw,24px);line-height:1.12;letter-spacing:-.02em;color:#f2f6fd}
 .month-tags{display:flex;flex-wrap:wrap;gap:8px}.month-tags span{padding:9px 12px;border:1px solid rgba(255,255,255,.14);border-radius:999px;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#edf2fb;background:rgba(255,255,255,.04)}
 .month-filter{position:sticky;top:72px;z-index:80;display:flex;gap:30px;overflow:auto;padding:0 var(--outer-gutter);background:rgba(243,242,239,.96);backdrop-filter:blur(14px);border-bottom:1px solid #c9c7c1}
 .month-filter a{padding:17px 0 15px;white-space:nowrap;font-size:10px;letter-spacing:.14em;text-transform:uppercase}
@@ -479,8 +479,8 @@ main{position:relative;z-index:2}
 
 
 
-.brand-article-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;align-items:start}
-.brand-article{display:flex;flex-direction:column;color:#111;min-width:0}
+.brand-article-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;align-items:start;max-width:1320px;margin:0 auto}
+.brand-article{display:flex;flex-direction:column;color:#111;min-width:0;padding:0 2px}
 .brand-article-title{margin:0 0 18px;font-size:clamp(22px,2vw,34px);line-height:1.14;letter-spacing:-.03em;font-weight:650;min-height:2.7em}
 .brand-article-thumb{border-radius:14px;overflow:hidden;background:#e3ded6;border:1px solid #d5d1c8;aspect-ratio:1.08}
 .brand-article-thumb img{width:100%;height:100%;object-fit:cover}
@@ -527,7 +527,7 @@ main{position:relative;z-index:2}
   .month-grid-featured,.compact-featured-grid{grid-template-columns:1fr 1fr}.month-card-note{grid-column:1/-1;min-height:300px}.month-mini-card{grid-column:1/-1}.four-card-grid{grid-template-columns:repeat(2,1fr)}.brand-article-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.aigc-grid-compact{grid-template-columns:repeat(2,1fr)}.month-intro-grid,.month-heading{grid-template-columns:1fr}.month-heading p{max-width:720px}.month-video{grid-template-columns:1fr}.month-video-copy{min-height:280px}.month-video-media{min-height:420px}.packaging-card,.advertising-card{flex-basis:280px}
 }
 @media(max-width:820px){
-  .month-header{height:66px}.month-home main{padding-top:66px}.month-intro-dark{min-height:auto}.month-intro-inner{padding:34px 16px 56px}.month-intro-meta{margin-bottom:48px}.month-intro-grid{gap:26px}.month-intro h1{font-size:clamp(58px,18vw,92px);line-height:.92}.month-intro h1 span + span{margin-top:.26em}.hero-keywords{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 12px;max-width:none}.hero-keywords span{font-size:20px;padding:8px 0}.month-intro-copy p{font-size:14px}.month-filter{top:66px;padding:0 16px;gap:22px}.month-section{padding:64px 16px}.month-heading{margin-bottom:28px}.month-heading h2{font-size:clamp(44px,14vw,74px);line-height:.94}.month-grid-featured,.compact-featured-grid,.four-card-grid,.three-card-grid,.brand-article-grid,.aigc-grid-compact{grid-template-columns:1fr}.month-card-note,.month-mini-card{grid-column:auto;min-height:320px}.brand-article-title{min-height:auto;font-size:clamp(28px,10vw,42px)}.month-card{border-radius:18px}.project-card-lg .month-card-media{aspect-ratio:4/3}.month-card-body{padding:18px}.month-video{min-height:auto;border-radius:20px}.month-video-media{min-height:330px}.month-video-copy{padding:24px;min-height:250px}.month-contact{margin:0 16px 28px;padding:70px 18px;border-radius:22px}.month-contact h2{font-size:clamp(54px,16vw,90px)}.month-contact>div{flex-direction:column;align-items:flex-start;gap:18px}.packaging-track,.advertising-track{animation:none;display:grid;grid-template-columns:1fr;gap:16px;width:100%}.packaging-card,.advertising-card{flex:1 1 auto}.mazu-project .project-overlay{padding:24px 18px 28px}
+  .month-header{height:66px}.month-home main{padding-top:66px}.month-intro-dark{min-height:auto}.month-intro-inner{padding:34px 16px 56px}.month-intro-meta{margin-bottom:48px}.month-intro-grid{gap:26px}.month-intro h1{font-size:clamp(50px,16vw,82px);line-height:.96}.month-intro h1 span + span{margin-top:.26em}.hero-keywords{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 12px;max-width:none}.hero-keywords span{font-size:18px;padding:8px 0}.month-intro-copy p{font-size:14px}.month-filter{top:66px;padding:0 16px;gap:22px}.month-section{padding:64px 16px}.month-heading{margin-bottom:28px}.month-heading h2{font-size:clamp(38px,12vw,64px);line-height:1}.month-grid-featured,.compact-featured-grid,.four-card-grid,.three-card-grid,.brand-article-grid,.aigc-grid-compact{grid-template-columns:1fr}.month-card-note,.month-mini-card{grid-column:auto;min-height:320px}.brand-article-title{min-height:auto;font-size:clamp(28px,10vw,42px)}.month-card{border-radius:18px}.project-card-lg .month-card-media{aspect-ratio:4/3}.month-card-body{padding:18px}.month-video{min-height:auto;border-radius:20px}.month-video-media{min-height:330px}.month-video-copy{padding:24px;min-height:250px}.month-contact{margin:0 16px 28px;padding:70px 18px;border-radius:22px}.month-contact h2{font-size:clamp(54px,16vw,90px)}.month-contact>div{flex-direction:column;align-items:flex-start;gap:18px}.packaging-track,.advertising-track{animation:none;display:grid;grid-template-columns:1fr;gap:16px;width:100%}.packaging-card,.advertising-card{flex:1 1 auto}.mazu-project .project-overlay{padding:24px 18px 28px}
 }
 
 /* Brand section uses the same card and text system as Selected Work */
@@ -568,3 +568,17 @@ img,
 .next-project .next-inner{
   text-shadow:0 2px 18px rgba(0,0,0,.75);
 }
+
+.project-intro,.project-sections,.image-cluster,.project-story{max-width:1400px}
+.project-sections{padding-top:8px}
+.info-section{gap:28px}
+.info-text{padding:32px 34px 28px}
+.image-cluster{gap:22px;padding-top:28px;padding-bottom:28px}
+.cluster-copy{padding:26px}
+.text-grid{gap:22px}
+.text-card{padding:24px}
+.mazu-project .project-intro,.mazu-project .project-sections,.mazu-project .image-cluster,.mazu-project .project-story{max-width:1360px}
+.mazu-project .info-image,.mazu-project .cluster-card{background:#ffffff;border-color:rgba(16,18,24,.08)}
+.mazu-project .info-image img,.mazu-project .cluster-card img{object-fit:contain;background:#ffffff;filter:none!important;mix-blend-mode:normal!important;opacity:1!important;image-rendering:auto}
+.mazu-project .cluster-card.with-note,.mazu-project .cluster-card{box-shadow:0 20px 50px rgba(0,0,0,.18)}
+.mazu-project .image-note{background:rgba(255,255,255,.84);color:#2a2e37;backdrop-filter:none}
