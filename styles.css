@@ -1038,3 +1038,11 @@ img,
 .peach-end-vertical{align-self:start}
 .peach-end-vertical img{width:100%;height:auto!important;object-fit:unset!important}
 @media (max-width:820px){.peach-end-vertical{grid-column:auto}}
+
+
+/* ===== v26 mazu final fixes ===== */
+.mazu-project .mazu-visual-block{grid-template-columns:minmax(0,.92fr) minmax(420px,1.08fr)!important}
+.mazu-project .mazu-image-05{min-height:420px!important}
+.mazu-project .mazu-image-05 img{width:100%!important;height:auto!important;display:block}
+.mazu-project .info-image img,.mazu-project .cluster-card img{background:transparent!important}
+@media (max-width: 820px){.mazu-project .mazu-visual-block{grid-template-columns:1fr!important}.mazu-project .mazu-image-05{min-height:0!important}}
