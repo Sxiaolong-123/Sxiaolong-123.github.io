@@ -1111,3 +1111,405 @@ img,
   color:#dfc6cf;
   border:1px solid rgba(255,215,226,.12);
 }
+
+
+/* ===== v28 event module ===== */
+.event-grid{display:grid;grid-template-columns:1.3fr .85fr .85fr .9fr;gap:20px;align-items:stretch}
+.event-feature-card{grid-column:span 2}
+.event-sub-card .month-card-media{background:#111}
+.event-project{color:#b8b6c7}
+.event-project .project-overlay h1,.event-project .project-intro h2,.event-project .info-text h3,.event-project .cluster-copy h4{color:#f0ecff}
+.event-project .project-copy>p,.event-project .info-text p,.event-project .cluster-copy p,.event-project .bullet-list div strong,.event-project .facts div strong{color:#d4d0e2}
+.event-project .project-label,.event-project .hero-meta span,.event-project .eyebrow,.event-project .bullet-list div span,.event-project .facts div span{color:#a9a5bf}
+.event-four-grid .cluster-card img{width:100%;height:auto;object-fit:contain}
+@media (max-width:1100px){.event-grid{grid-template-columns:1fr 1fr}.event-feature-card{grid-column:1 / -1}}
+@media (max-width:720px){.event-grid{grid-template-columns:1fr}}
+
+/* ===== v28 stronger longyin soft text ===== */
+.longyin-project .project-overlay h1{color:#e7cfd9!important}
+.longyin-project .project-intro h2,.longyin-project .info-text h3,.longyin-project .cluster-copy h4,.longyin-project .text-card h4{color:#e5ced6!important}
+.longyin-project .project-label,.longyin-project .hero-meta span,.longyin-project .eyebrow,.longyin-project .facts div span,.longyin-project .bullet-list div span,.longyin-project .site-nav a,.longyin-project .brand-mark{color:#cdb3bd!important}
+.longyin-project .project-copy>p,.longyin-project .info-text p,.longyin-project .cluster-copy p,.longyin-project .text-card p,.longyin-project .facts div strong,.longyin-project .bullet-list div strong,.longyin-project .site-footer p,.longyin-project .footer-nav a{color:#d8c2ca!important}
+.longyin-project .project-copy,.longyin-project .info-section,.longyin-project .cluster-card,.longyin-project .site-footer{box-shadow:none}
+
+
+/* ===== v29 event proportional image layout ===== */
+.event-project .project-sections,
+.event-project .image-cluster{max-width:1320px}
+.event-project .info-section,
+.event-project .info-section.reverse{align-items:start}
+.event-project .info-image{
+  min-height:0!important;
+  height:auto!important;
+  align-self:start;
+  background:transparent!important;
+}
+.event-project .info-image img,
+.event-project .cluster-card img{
+  display:block;
+  width:100%!important;
+  height:auto!important;
+  max-height:none!important;
+  object-fit:contain!important;
+  object-position:center!important;
+  background:transparent!important;
+}
+.event-project .cluster-card{
+  min-height:0!important;
+  height:auto!important;
+  align-self:start;
+}
+.event-project .image-cluster{align-items:start}
+.event-project .project-hero img{object-fit:cover!important}
+
+/* ===== v29 Longyin text hierarchy ===== */
+.longyin-project .project-overlay h1{
+  color:#fff!important;
+  text-shadow:0 8px 28px rgba(0,0,0,.28);
+}
+.longyin-project .project-label,
+.longyin-project .hero-meta,
+.longyin-project .hero-meta span{
+  color:rgba(255,255,255,.88)!important;
+}
+.longyin-project .project-intro h2,
+.longyin-project .info-text h3,
+.longyin-project .cluster-copy h4,
+.longyin-project .text-card h4,
+.longyin-project .facts div strong,
+.longyin-project .bullet-list div strong{
+  color:#e6e6e6!important;
+}
+.longyin-project .project-copy>p,
+.longyin-project .info-text p,
+.longyin-project .cluster-copy p,
+.longyin-project .text-card p,
+.longyin-project .site-footer p,
+.longyin-project .footer-nav a{
+  color:#d9d9d9!important;
+}
+.longyin-project .eyebrow,
+.longyin-project .facts div span,
+.longyin-project .bullet-list div span{
+  color:#b8b8b8!important;
+}
+
+/* ===== v29 homepage interaction ===== */
+.month-home{--mx:50%;--my:30%}
+.month-home .month-intro::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background:radial-gradient(420px circle at var(--mx) var(--my),rgba(134,166,255,.18),transparent 68%);
+  z-index:1;
+  transition:opacity .3s ease;
+}
+.month-home .month-intro-inner{will-change:transform}
+.month-home .month-card{
+  transform-style:preserve-3d;
+  will-change:transform;
+  transition:transform .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s ease,border-color .35s ease;
+}
+.month-home .month-card.is-tilting{
+  box-shadow:0 28px 70px rgba(0,0,0,.24);
+  border-color:rgba(255,255,255,.16);
+}
+.month-home .month-card .month-card-media img{will-change:transform}
+.month-home .month-card.is-tilting .month-card-media img{transform:scale(1.025)}
+@media (pointer:coarse), (prefers-reduced-motion:reduce){
+  .month-home .month-card{transform:none!important}
+  .month-home .month-intro-inner{transform:none!important}
+  .month-home .month-intro::after{display:none}
+}
+
+
+/* ===== v30 requested refinements ===== */
+/* Event page: show the complete hero artwork and use white text */
+.event-project .project-hero{
+  height:auto!important;
+  min-height:0!important;
+  background:#07090d!important;
+  display:block;
+}
+.event-project .project-hero>img{
+  position:relative!important;
+  inset:auto!important;
+  display:block;
+  width:100%!important;
+  height:auto!important;
+  object-fit:contain!important;
+  object-position:center center!important;
+  background:#07090d!important;
+}
+.event-project .project-overlay{
+  position:absolute;
+  inset:0;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+  pointer-events:none;
+}
+.event-project .project-hero::after{
+  background:linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.06) 45%,rgba(4,6,10,.72) 100%)!important;
+}
+.event-project,
+.event-project .project-overlay h1,
+.event-project .project-intro h2,
+.event-project .info-text h3,
+.event-project .cluster-copy h4,
+.event-project .project-copy>p,
+.event-project .info-text p,
+.event-project .cluster-copy p,
+.event-project .bullet-list div strong,
+.event-project .facts div strong,
+.event-project .project-label,
+.event-project .hero-meta span,
+.event-project .eyebrow,
+.event-project .bullet-list div span,
+.event-project .facts div span,
+.event-project .site-nav a,
+.event-project .brand-mark,
+.event-project .site-footer,
+.event-project .site-footer p,
+.event-project .site-footer a{
+  color:#fff!important;
+}
+
+/* Longyin: titles white, everything else unchanged */
+.longyin-project .project-overlay h1,
+.longyin-project .project-intro h2,
+.longyin-project .info-text h3,
+.longyin-project .cluster-copy h4,
+.longyin-project .text-card h4,
+.longyin-project .next-inner strong,
+.longyin-project .site-footer strong{
+  color:#fff!important;
+}
+
+/* Homepage meteor-tail cursor interaction */
+.meteor-trail{
+  position:fixed;
+  inset:0;
+  width:100%;
+  height:100%;
+  pointer-events:none;
+  z-index:9997;
+}
+.month-home .cursor-dot,
+.month-home .cursor-ring{display:none!important}
+.month-home .month-intro-inner,
+.month-home .month-card{transform:none!important}
+@media (pointer:coarse),(prefers-reduced-motion:reduce){.meteor-trail{display:none}}
+@media(max-width:820px){
+  .event-project .project-overlay{padding:88px 16px 20px}
+  .event-project .project-overlay h1{font-size:clamp(32px,10vw,52px)}
+}
+
+
+/* ===== v31 homepage no cursor-interactive meteor effect ===== */
+.meteor-trail{display:none!important}
+
+/* ===== v31 tech event hero full image and refined spacing ===== */
+.event-project .project-hero{background:radial-gradient(circle at 50% 20%,rgba(74,108,255,.22),rgba(7,9,15,0) 38%), #05070d;}
+.event-project .project-hero img{object-fit:contain; object-position:center center; background:#05070d;}
+.event-project .project-hero::after{background:linear-gradient(180deg,rgba(4,6,10,.22),rgba(5,7,12,.18) 38%,rgba(5,7,12,.9) 100%);}
+.event-project .project-overlay{padding:120px var(--pad) 58px; gap:0;}
+.event-project .project-label{margin-bottom:18px; color:#d8def2;}
+.event-project .project-overlay h1{max-width:10ch; line-height:.9; margin-bottom:28px; color:#ffffff;}
+.event-project .hero-meta{margin-top:0; padding-top:18px; border-top:1px solid rgba(255,255,255,.24); color:#f0f3fb;}
+.event-project .hero-meta span{line-height:1.8; color:#e8ecf7;}
+@media (max-width: 900px){
+  .event-project .project-overlay{padding:104px var(--pad) 40px;}
+  .event-project .project-overlay h1{margin-bottom:22px; line-height:.94;}
+}
+
+
+/* ===== v33 event hero typography spacing refinement ===== */
+.event-project .project-overlay{
+  padding: 126px var(--pad) 64px;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+}
+.event-project .project-label{
+  display:block;
+  margin-bottom:22px;
+  letter-spacing:.18em;
+}
+.event-project .project-overlay h1{
+  max-width: 11ch;
+  line-height: .96;
+  letter-spacing: -.03em;
+  margin: 0 0 30px 0;
+}
+.event-project .hero-meta{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:10px;
+  margin-top:0;
+  padding-top:20px;
+  max-width: 760px;
+}
+.event-project .hero-meta span{
+  display:block;
+  line-height:1.75;
+}
+@media (max-width: 900px){
+  .event-project .project-overlay{padding:108px var(--pad) 42px;}
+  .event-project .project-label{margin-bottom:16px;}
+  .event-project .project-overlay h1{margin-bottom:22px; max-width:9ch; line-height:1.02;}
+  .event-project .hero-meta{gap:8px; padding-top:16px;}
+}
+
+
+/* ===== v34 event hero 1cm spacing refinement ===== */
+.event-project .project-overlay{
+  padding: 132px var(--pad) 70px;
+}
+.event-project .project-label{
+  margin-bottom: 38px;
+}
+.event-project .project-overlay h1{
+  margin-bottom: 38px;
+}
+.event-project .hero-meta{
+  padding-top: 38px;
+  gap: 14px;
+  max-width: 780px;
+}
+@media (max-width: 900px){
+  .event-project .project-overlay{padding: 110px var(--pad) 46px;}
+  .event-project .project-label{margin-bottom: 24px;}
+  .event-project .project-overlay h1{margin-bottom: 24px;}
+  .event-project .hero-meta{padding-top: 24px; gap: 10px;}
+}
+
+
+/* ===== v35 event hero vertical spacing only ===== */
+.event-project .project-label{margin-bottom:38px!important;}
+.event-project .project-overlay h1{margin:0 0 38px 0!important;}
+.event-project .hero-meta{margin-top:0!important;padding-top:38px!important;}
+@media (max-width:900px){
+  .event-project .project-label{margin-bottom:24px!important;}
+  .event-project .project-overlay h1{margin-bottom:24px!important;}
+  .event-project .hero-meta{padding-top:24px!important;}
+}
+
+
+/* ===== v36 event hero title tighten and move upward ===== */
+.event-project .project-overlay{
+  padding: 114px var(--pad) 74px !important;
+}
+.event-project .project-overlay h1{
+  line-height: .82 !important;
+  letter-spacing: -.05em !important;
+  margin: 0 0 24px 0 !important;
+  max-width: 8.6ch !important;
+}
+.event-project .project-label{
+  margin-bottom: 20px !important;
+}
+.event-project .hero-meta{
+  padding-top: 20px !important;
+  gap: 8px !important;
+}
+@media (max-width: 900px){
+  .event-project .project-overlay{padding: 98px var(--pad) 42px !important;}
+  .event-project .project-overlay h1{line-height: .9 !important; margin-bottom: 18px !important;}
+  .event-project .project-label{margin-bottom: 14px !important;}
+  .event-project .hero-meta{padding-top: 14px !important; gap: 6px !important;}
+}
+
+
+/* ===== v37 fix event hero title oversized issue ===== */
+.event-project .project-overlay{
+  justify-content:flex-start !important;
+  padding: 96px var(--pad) 56px !important;
+}
+.event-project .project-label{
+  margin-bottom: 18px !important;
+}
+.event-project .project-overlay h1{
+  font-size: clamp(46px, 7.4vw, 116px) !important;
+  line-height: .9 !important;
+  letter-spacing: -.05em !important;
+  margin: 0 0 28px 0 !important;
+  max-width: 6.2ch !important;
+}
+.event-project .hero-meta{
+  margin-top: 0 !important;
+  padding-top: 18px !important;
+  gap: 10px !important;
+  max-width: 680px !important;
+}
+.event-project .hero-meta span{
+  display:block !important;
+  line-height: 1.7 !important;
+}
+@media (max-width: 900px){
+  .event-project .project-overlay{
+    padding: 88px var(--pad) 38px !important;
+  }
+  .event-project .project-overlay h1{
+    font-size: clamp(36px, 12vw, 64px) !important;
+    max-width: 5.8ch !important;
+    margin: 0 0 18px 0 !important;
+    line-height: .94 !important;
+  }
+  .event-project .project-label{margin-bottom: 12px !important;}
+  .event-project .hero-meta{padding-top: 12px !important; gap: 6px !important;}
+}
+
+
+/* ===== v38 event hero harmonious typography relayout ===== */
+.event-project .project-overlay{
+  justify-content:flex-end !important;
+  align-items:flex-start !important;
+  padding: 112px var(--pad) 84px !important;
+}
+.event-project .project-label{
+  display:block !important;
+  margin-bottom: 26px !important;
+  font-size: 11px !important;
+  letter-spacing: .18em !important;
+}
+.event-project .project-overlay h1{
+  font-size: clamp(44px, 6.8vw, 108px) !important;
+  line-height: .96 !important;
+  letter-spacing: -.045em !important;
+  margin: 0 0 30px 0 !important;
+  max-width: none !important;
+  display:grid !important;
+  gap: 10px !important;
+}
+.event-project .project-overlay h1 span{display:block !important;}
+.event-project .hero-meta{
+  display:grid !important;
+  grid-template-columns: 1fr !important;
+  gap: 12px !important;
+  margin-top: 0 !important;
+  padding-top: 20px !important;
+  max-width: 640px !important;
+}
+.event-project .hero-meta span{
+  display:block !important;
+  line-height: 1.8 !important;
+}
+@media (max-width: 900px){
+  .event-project .project-overlay{
+    padding: 96px var(--pad) 48px !important;
+  }
+  .event-project .project-label{margin-bottom: 16px !important;}
+  .event-project .project-overlay h1{
+    font-size: clamp(34px, 10vw, 60px) !important;
+    gap: 8px !important;
+    margin: 0 0 20px 0 !important;
+    line-height: .98 !important;
+  }
+  .event-project .hero-meta{
+    gap: 8px !important;
+    padding-top: 14px !important;
+    max-width: 100% !important;
+  }
+}

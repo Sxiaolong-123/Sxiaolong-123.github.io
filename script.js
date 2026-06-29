@@ -109,3 +109,7 @@
   function loop(){rx+=(mx-rx)*.16;ry+=(my-ry)*.16;ring.style.transform=`translate(${rx-17}px,${ry-17}px)`;requestAnimationFrame(loop)}loop();
   document.querySelectorAll('a,button,[data-cursor]').forEach(el=>{el.addEventListener('mouseenter',()=>ring.classList.add('is-active'));el.addEventListener('mouseleave',()=>ring.classList.remove('is-active'));});
 })();
+
+
+
+
